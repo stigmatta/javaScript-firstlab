@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!-- Задание 1 
+        <script>
+            let sum=0;
+            while(confirm("Продолжить?"))
+            {
+                sum+=parseInt(prompt("Введите количество #"));
+            }
+            alert('#'.repeat(sum));
+        </script>
+        ------------------------------------------- -->
+
+        <!-- Задание 2 
+        <script>
+            let a = Number;
+            a = prompt("Введите число");
+            while(a>=0)
+            {
+                document.write(a);
+                a--;
+            }
+        </script>
+        ---------------------------------------------- -->
+        
+        <!-- Задание 3 
+        <script>
+            let num=Number,pow=Number;
+            num=parseInt(prompt(("Введите число")));
+            pow=parseInt(prompt(("Введите степень")));
+            document.write("Число в степени: ", num ** pow)
+        </script> -->
+        <!-- ----------------------------------------------  -->
+
+        <!-- Задание 4 
+        <script>
+            let num1=Number,num2 = Number;
+            num1 = parseInt(prompt("Введите первое число"));
+            num2 = parseInt(prompt("Введите второе число"));
+            let max = num1>num2?num1:num2;
+            for(let i = 1;i<=max/2;i++)
+            {
+                if(num1%i==0 && num2%i==0)
+                    document.write(i);
+            }
+        </script>
+        ---------------------------------------------------- -->
+
+        <!-- Задание 5 
+        <script>
+            let num = Number,factorial=1;
+            num = parseInt(prompt("Введите число"));
+            for(let i = 1;i<=num;i++)
+                factorial*=i;
+            document.write(factorial);
+        </script>
+        ------------------------------------------------------ -->
+
+        <!-- Задание 6 
+        <script>
+            let result=6,num=Number;
+            do{
+                num=parseInt(prompt("Решите пример 2+2*2"));
+                if(num!=result){
+                    alert("Пример решен неверно");
+                }
+            }while(num!=result);
+            alert("Все верно!");
+        </script>
+        -------------------------------------------------------- -->
+
+        <!-- Задание 7
+        <script>
+            let iterations=0,num=1000;
+            do{
+                num/=2;
+                iterations++;
+            }while(num>50)
+            document.write("Количество делений: ",iterations);
+        </script>
+        --------------------------------------------------------- -->
+
+        <!-- Задание 8
+        <script>
+            let num = parseInt(prompt("Введите число"));
+            for(let i = 1;i<100;i++)
+            {
+                if(i%num===0)
+                    document.write(i,"\n");
+            }
+        </script>
+        -------------------------------------------------------- -->
+
+        <!-- Задание 9
+        <script>
+            let lower = parseInt(prompt("Введите нижнюю границу диапазона"));
+            let upper = parseInt(prompt("Введите верхнюю границу диапазона"));
+            for(let i = lower+3;i<upper;i+=4)
+                document.write(i,'\n');
+        </script>
+        --------------------------------------------------------- -->
+
+        Задание 10
+        <script>
+            let num = parseInt(prompt("Введите число"));
+            let flag = false;
+            for(let i = 2;i<num;i++){
+                if(num%i===0)
+                {
+                    document.write("Число не является простым");
+                    flag=true;
+                    break;
+                }
+            }
+            if(!flag)
+                document.write("Число простое");
+        </script>
+    </body>
+</html>
